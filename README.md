@@ -48,8 +48,8 @@ const store = createStore(combineReducers({
   user: (/* state, action */) => ({ name: 'John' })
 }))
 
+// Uses the default store `store` as name.
 const Root = () => (
-  {/* Uses the default store `store` as name. */}
   <Provider store={store}>
     <TodosContainer />
   </Provider>
@@ -63,13 +63,13 @@ import { createProvider } from 'react-redux-custom-store'
 
 const storeName = 'todo'
 const todoStore = createStore(combineReducers({
-  todos: (/* state, action */) => [ { text: 'OK' }, { text: 'Missing' } ]
+  todos: (/* state, action */) => [{ text: 'OK' }, { text: 'Missing' }],
 }))
 const Provider = createProvider(storeName)
 
+// Uses the custom store `todo` as name.
+// At this point there are 2 stores in `context`.
 const TodosContainer = () => (
-  {/* Uses the custom store `todo` as name.
-    At this point there are 2 stores in `context`. */}
   <Provider store={todoStore}>
     <Todos />
   </Provider>
@@ -96,7 +96,7 @@ TodoList.propTypes = {
 }
 
 const ConnectedTodoProfile = connect(
-  ({ user: { name } }) => ({ name })
+  ({ user: { name } }) => ({ name })
 )(TodoProfile) // uses default store name `store`
 
 const ConnectedTodoList = connect(
