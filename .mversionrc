@@ -1,0 +1,9 @@
+{
+  "commitMessage": "Bumps to version v%s",
+  "tagName": "v%s",
+  "scripts": {
+    "preupdate": "npm run lint && npm test && npm run dist",
+    "postcommit": "git push && git push --tags && npm publish",
+    "postupdate": "echo 'New version v%s tagged and released'"
+  }
+}
