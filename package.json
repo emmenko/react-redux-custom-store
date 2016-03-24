@@ -2,11 +2,13 @@
   "name": "react-redux-custom-store",
   "version": "1.0.0",
   "description": "Simple wrapper around react-redux to allow configuring and using connect with a custom store name.",
+  "homepage": "https://github.com/emmenko/react-redux-custom-store",
   "author": "Nicola Molinari <emmenko@gmail.com>",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist",
   "scripts": {
-    "lint": "eslint .",
+    "dist": "rimraf dist && babel lib --out-dir dist",
+    "lint": "eslint lib test",
     "test": "NODE_ENV=test babel-node test/index.js | tap-spec"
   },
   "peerDependencies": {
@@ -32,8 +34,16 @@
     "react-dom": "^0.14.7",
     "react-redux": "^4.4.1",
     "redux": "^3.3.1",
+    "rimraf": "^2.5.2",
     "tap-spec": "^4.1.1",
     "tape": "^4.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emmenko/react-redux-custom-store"
+  },
+  "bugs": {
+    "url": "https://github.com/emmenko/react-redux-custom-store/issues"
   },
   "keywords": [
     "react",

@@ -3,8 +3,8 @@ import test from 'tape'
 import { mount } from 'enzyme'
 import React, { PropTypes } from 'react'
 import { createStore, combineReducers } from 'redux'
-import connect from '../connect'
-import createProvider from '../create-provider'
+import connect from '../lib/connect'
+import createProvider from '../lib/create-provider'
 
 const store = createStore(combineReducers({
   user: (/* state, action */) => ({ name: 'John' }),
