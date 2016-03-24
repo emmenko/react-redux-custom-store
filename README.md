@@ -3,6 +3,7 @@
 Simple wrapper around [react-redux](https://github.com/reactjs/react-redux).
 It allows to use different _nested_ `Provider`s by specifying a custom `store` name.
 
+[![build status](https://img.shields.io/travis/emmenko/react-redux-custom-store/master.svg?style=flat-square)](https://travis-ci.org/emmenko/react-redux-custom-store) [![npm version](https://img.shields.io/npm/v/react-redux-custom-store.svg?style=flat-square)](https://www.npmjs.com/package/react-redux-custom-store)
 
 ### Installation
 
