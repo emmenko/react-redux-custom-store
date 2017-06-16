@@ -31,7 +31,7 @@
     "babel-runtime": "^6.6.1",
     "cz-conventional-changelog": "1.1.5",
     "enzyme": "^2.0.0",
-    "eslint": "^4.0.0",
+    "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-react": "^7.1.0",
     "jsdom": "^8.1.0",
