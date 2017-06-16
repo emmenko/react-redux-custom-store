@@ -36,9 +36,9 @@
     "eslint-plugin-react": "^4.1.0",
     "jsdom": "^8.1.0",
     "mversion": "^1.10.1",
-    "react": "^0.14.7",
-    "react-addons-test-utils": "^0.14.7",
-    "react-dom": "^0.14.7",
+    "react": "^0.14.9",
+    "react-addons-test-utils": "^0.14.8",
+    "react-dom": "^0.14.9",
     "react-redux": "^4.4.1",
     "redux": "^3.3.1",
     "rimraf": "^2.5.2",
@@ -67,13 +67,22 @@
   "eslintConfig": {
     "extends": "airbnb",
     "rules": {
-      "semi": [ 2, "never" ],
-      "space-before-function-paren": [ 2, "always" ]
+      "semi": [
+        2,
+        "never"
+      ],
+      "space-before-function-paren": [
+        2,
+        "always"
+      ]
     }
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10"
   }
 }
