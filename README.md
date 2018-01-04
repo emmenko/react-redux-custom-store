@@ -1,3 +1,5 @@
+<h1 align="center">This repository is deprecated and not maintained anymore</h1>
+
 # React Redux (custom store)
 
 Simple wrapper around [react-redux](https://github.com/reactjs/react-redux).
