@@ -18,7 +18,8 @@
   },
   "peerDependencies": {
     "react": ">=0.14",
-    "react-redux": ">=4"
+    "react-redux": ">=4",
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",
@@ -67,8 +68,14 @@
   "eslintConfig": {
     "extends": "airbnb",
     "rules": {
-      "semi": [ 2, "never" ],
-      "space-before-function-paren": [ 2, "always" ]
+      "semi": [
+        2,
+        "never"
+      ],
+      "space-before-function-paren": [
+        2,
+        "always"
+      ]
     }
   },
   "config": {
